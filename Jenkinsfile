@@ -10,20 +10,20 @@ void setBuildStatus(String message, String state) {
 
 node {
     checkout scm
-    stages {
+    stage ('Deploy') {
         if (env.BRANCH_NAME == 'master') {
-            stage ('Deploy') {
-                sshagent('GitHub') {
-                    try {
-                        sh 'mvn release:prepare'
-                        sh 'mvn release:perform'
-                    } catch (e) {
-                        sh 'mvn clean install'
-                    } finally {
-                        setBuildStatus("Build complete", "SUCCESS");
-                    }
+            sshagent('GitHub') {
+                try {
+                    sh 'mvn release:prepare'
+                    sh 'mvn release:perform'
+                } catch (e) {
+                    sh 'mvn release:rollback'
+                } finally {
+                    setBuildStatus("Build complete", "SUCCESS");
                 }
             }
+        } else {
+            sh 'mvn clean install'
         }
     }
 }
