@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.6.RELEASE</version>
+    </parent>
+
+    <groupId>uk.me.krupa.kruton</groupId>
+    <artifactId>kruton-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <scm>
+        <connection>scm:git://github.com/GJKrupa/kruton-parent.git</connection>
+        <developerConnection>scm:git://github.com/GJKrupa/kruton-parent.git</developerConnection>
+        <tag>${project.version}</tag>
+        <url>https://github.com/GJKrupa/kruton-parent</url>
+    </scm>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>me.ramswaroop.jbot</groupId>
+                <artifactId>jbot</artifactId>
+                <version>3.0.2</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>krupameuk-releases</id>
+            <name>krupa.me.uk repository</name>
+            <url>https://repo.krupa.me.uk/repository/maven-releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <preparationGoals>test</preparationGoals>
+                    <goals>deploy site-deploy</goals>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
