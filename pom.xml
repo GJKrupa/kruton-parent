@@ -16,10 +16,9 @@
     <packaging>pom</packaging>
 
     <scm>
-        <connection>scm:git://github.com/GJKrupa/kruton-parent.git</connection>
-        <developerConnection>scm:git://github.com/GJKrupa/kruton-parent.git</developerConnection>
+        <connection>scm:git:git://github.com/GJKrupa/kruton-parent.git</connection>
+        <developerConnection>scm:git:git://github.com/GJKrupa/kruton-parent.git</developerConnection>
         <tag>${project.version}</tag>
-        <url>https://github.com/GJKrupa/kruton-parent</url>
     </scm>
 
     <dependencyManagement>
