@@ -1,2 +1,2 @@
-@Library('my-shared-library')
-mavenBuildWithRelease()
+@Library('kruton-build-lib')
+BuildModes.mavenBuildWithRelease()
