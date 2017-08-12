@@ -47,7 +47,7 @@
                 <version>2.5.3</version>
                 <configuration>
                     <preparationGoals>test</preparationGoals>
-                    <goals>deploy site-deploy</goals>
+                    <goals>deploy</goals>
                 </configuration>
             </plugin>
         </plugins>
