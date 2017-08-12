@@ -17,7 +17,7 @@
 
     <scm>
         <connection>scm:git:git://github.com/GJKrupa/kruton-parent.git</connection>
-        <developerConnection>scm:git:git@github.com:/GJKrupa/kruton-parent.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:GJKrupa/kruton-parent.git</developerConnection>
         <tag>${project.version}</tag>
     </scm>
 
