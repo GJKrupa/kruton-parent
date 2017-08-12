@@ -1,2 +1,3 @@
 @Library('kruton-build-lib')
-BuildModes.mavenBuildWithRelease()
+def buildModes = new BuildModes()
+buildModes.mavenBuildWithRelease()
