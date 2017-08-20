@@ -19,6 +19,10 @@
         <tag>${project.version}</tag>
     </scm>
 
+    <properties>
+        <docker.image.base>quay.io/gjkrupa</docker.image.base>
+    </properties>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
