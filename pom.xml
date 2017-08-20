@@ -10,7 +10,7 @@
 
     <groupId>uk.me.krupa.kruton</groupId>
     <artifactId>kruton-parent</artifactId>
-    <version>1.0.7-SNAPSHOT</version>
+    <version>1.0.8-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <scm>
