@@ -1,2 +1,2 @@
-# kruton-parent ![Build Status](https://build.krupa.me.uk/buildStatus/icon?job=kruton-parent/master)
+# kruton-parent ![Build Status](https://travis-ci.org/GJKrupa/kruton-parent.svg?branch=master)
 Parent project for kruton bot
