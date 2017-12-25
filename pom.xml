@@ -35,10 +35,13 @@
 
     <distributionManagement>
         <repository>
-            <id>krupameuk-releases</id>
-            <name>krupa.me.uk repository</name>
-            <url>https://repo.krupa.me.uk/repository/maven-releases/</url>
+            <id>packagecloud-uxian-kruton</id>
+            <url>packagecloud+https://packagecloud.io/uxian/kruton</url>
         </repository>
+        <snapshotRepository>
+            <id>packagecloud-uxian-kruton</id>
+            <url>packagecloud+https://packagecloud.io/uxian/kruton</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <build>
@@ -53,6 +56,12 @@
                 </configuration>
             </plugin>
         </plugins>
+        <extensions>
+            <extension>
+                <groupId>io.packagecloud.maven.wagon</groupId>
+                <artifactId>maven-packagecloud-wagon</artifactId>
+                <version>0.0.6</version>
+            </extension>
+        </extensions>
     </build>
-
 </project>
