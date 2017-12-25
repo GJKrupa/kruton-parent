@@ -13,8 +13,17 @@
     <version>1.0.10-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <licenses>
+        <license>
+            <name>Apache Licence Version 2.0</name>
+            <url>http://www.apache.org/licenses/</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
     <scm>
-        <connection>scm:git:git://github.com/GJKrupa/kruton-parent.git</connection>
+        <url>https://github.com/GJKrupa/kruton-parent</url>
+        <connection>scm:git:git@github.com:GJKrupa/kruton-parent.git</connection>
         <developerConnection>scm:git:git@github.com:GJKrupa/kruton-parent.git</developerConnection>
         <tag>${project.version}</tag>
     </scm>
