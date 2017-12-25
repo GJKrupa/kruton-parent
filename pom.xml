@@ -10,7 +10,7 @@
 
     <groupId>uk.me.krupa.kruton</groupId>
     <artifactId>kruton-parent</artifactId>
-    <version>1.0.10</version>
+    <version>1.0.11-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <licenses>
@@ -25,7 +25,7 @@
         <url>https://github.com/GJKrupa/kruton-parent</url>
         <connection>scm:git:git@github.com:GJKrupa/kruton-parent.git</connection>
         <developerConnection>scm:git:git@github.com:GJKrupa/kruton-parent.git</developerConnection>
-        <tag>kruton-parent-1.0.10</tag>
+        <tag>${project.version}</tag>
     </scm>
 
     <properties>
